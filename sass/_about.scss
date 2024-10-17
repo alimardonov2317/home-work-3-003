@@ -1,0 +1,71 @@
+.about{
+    padding: 130px 0 0;
+    &__wrapper{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 140px;
+    }
+    &__content{
+        max-width: 550px;
+    }
+    &__title{
+        font-size: 56px;
+        padding-bottom: 20px;
+    }
+    &__desc, p{
+        font-size: 20px;
+        padding-bottom: 20px;
+        color: $bj-sy;
+    }
+    &__content:nth-child(2) h2{
+        font-size: 30px;
+    }
+    
+    .about__name{
+        font-size: 30px;
+        color: $bj-py;
+    }
+    .about__job{
+        font-size: 20px;
+        color: $bj-sy;
+    }
+    &__actions{
+        display: flex;
+        gap: 20px;
+    }
+    &__btn{
+        padding: 10px 15px;
+        border-radius: 50%;
+        border: 1px solid #6FB587;
+        background: transparent;
+        &:nth-child(1){
+            opacity: 0.3;
+        }
+    }
+    
+}
+@media (max-width: 1150px){
+    .about{
+        &__wrapper{
+            flex-direction: column;
+            margin-bottom: 80px;
+        }
+        &__wrapper:nth-child(2){
+            flex-direction: column-reverse;
+        }
+    }
+}
+@media (max-width: 768px){
+    .about{
+        &__wrapper{
+            margin-bottom: 40px;
+        }
+        &__content{
+            text-align: center;
+        }
+        &__title{
+            font-size: 45px;
+        }
+    }
+}

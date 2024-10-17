@@ -1,0 +1,32 @@
+.header{
+    background: #F9F6F5;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+    &__collection{
+        display: flex;
+        gap: 40px;
+    }
+    &__item{
+        color: $bj-py;
+    }
+    &__menu{
+        display: flex;
+        gap: 28px;
+    }
+    &__link{
+        span:hover{
+            color: #884a3f;
+        }
+    }
+}
+@media (max-width: 768px){
+    .navbar{
+        &__collection{
+            display: none;
+        }
+    }
+}

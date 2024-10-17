@@ -1,0 +1,74 @@
+.contact {
+    padding: 64px 0;
+    background: #FAFAFA;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font-size: 36px;
+        color: $bj-py;
+    }
+
+    &__form {
+        position: relative;
+        width: 35%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__input {
+        width: 100%;
+        background: #FFF;
+        padding: 18px;
+    }
+
+    &__btn {
+        position: absolute;
+        padding: 10px 20px;
+        background: $bj-btn;
+        color: #FFF;
+        font-size: 18px;
+        font-weight: 500;
+        transition: all .5s ease;
+        font-family: RedHatDisplayM;
+        right: 10px;
+        &:hover {
+            background: #884a3f;
+            color: #FFF;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .contact{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 25px;
+        }
+
+    }
+}
+@media (max-width: 768px){
+    .contact{
+       &__form{
+        width: 80%;
+       }
+
+    }
+}
+@media (max-width: 375px){
+    .contact{
+        &__title{
+            font-size: 18px;
+        }
+       &__form{
+        width: 100%;
+       }
+
+    }
+}

@@ -1,0 +1,46 @@
+.footer{
+    padding: 50px 0;
+    &__navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        max-width: 326px;
+        img{
+            width: 213px;
+            padding-bottom: 30px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 32px;
+            color: $bj-sy;
+        }
+    }
+    &__link{
+        line-height: 40px;
+        margin-top: 40px;
+        span:hover{
+            color: #884a3f;
+        }
+    }
+     .active {
+        display: block;
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: RedHatDisplayM;
+     }
+     &__social{
+        display: flex;
+        gap: 25px;
+     }
+    
+}
+@media (max-width: 768px){
+    .footer{
+        &__navbar{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+        }
+    }
+}

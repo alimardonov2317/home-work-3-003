@@ -1,0 +1,13 @@
+@mixin BtnStyle (){
+    padding: 16px 32px;
+    background: $bj-btn;
+    color: #FFF;
+    font-size: 18;
+    font-weight: 500;
+    transition: all .5s ease;
+    font-family: RedHatDisplayM;
+    &:hover{
+        background: #884a3f;
+        color: #FFF;
+    }
+}

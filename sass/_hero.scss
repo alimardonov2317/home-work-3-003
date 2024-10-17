@@ -1,0 +1,91 @@
+.hero{
+    padding: 28px 0 0;
+    background: #F9F6F5;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        max-width: 620px;
+    }
+    &__title{
+        font-size: 56px;
+        
+    }
+    &__desc{
+        font-size: 20px;
+        color: $bj-sy;
+        max-width: 516px;
+        line-height: 32px;
+        margin-bottom: 30px;
+    }
+    &__form{
+        max-width: 326px;
+        display: flex;
+        position: relative;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    &__input{
+        padding: 8px;
+        width: 100%;
+        height: 48px;
+        text-indent: 8px;
+    }
+    &__btn{
+        padding: 8px 10px;
+        background: $bj-btn;
+        position: absolute;
+        right: 8px;
+        transition: all .5s ease;
+        &:hover{
+            background: $bj-hover;
+        }
+    }
+}
+
+.global__btn{
+    @include BtnStyle ();
+}
+@media (max-width: 1024px){
+    .hero{
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__content{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+        &__image{
+            margin: 20px auto;
+        }
+    }
+}
+@media (max-width: 768px){
+    .hero{
+        &__title{
+            font-size: 45px;
+        }
+        &__desc{
+            font-size: 18px;
+        }
+        &__actions{
+            width: 100%;
+            text-align: -webkit-center;
+        }
+
+    }
+}
+@media (max-width: 375px){
+    .hero{
+        &__title{
+            font-size: 30px;
+        }
+        &__desc{
+            font-size: 14px;
+        }
+    }
+}

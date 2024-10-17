@@ -1,0 +1,29 @@
+.partners{
+    padding: 130px 0 130px;
+    &__wrapper{
+        overflow: auto;
+        height: 113px;
+        border: 1px solid #EEE;
+        border-right: none;
+        border-left: none;
+        display: flex;
+        
+        justify-content: space-between;
+        align-items: center;
+        a{
+            flex: 0 0 auto;
+        }
+    }
+}
+@media (max-width: 768px){
+    .partners{
+        padding: 30px 0 30px;
+        &::-webkit-scrollbar{
+            height: 0;
+        }
+        &__wrapper{
+            padding: 0 16px;
+            gap: 50px;
+        }
+    }
+}
